@@ -15,7 +15,7 @@ void main()
             printf("_");
         }
 
-        // number
+        // star
         for (int k = 1; k <= i; k++)
         {
             printf("*");
