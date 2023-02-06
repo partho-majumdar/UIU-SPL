@@ -9,9 +9,9 @@ void main()
 
     int sum = 0, ans = 0;
 
-    for (int i = 1, j = 1; i <= n; i++, j++)
+    for (int i = 1; i <= n; i++)
     {
-        ans = (ans * 10) + j;
+        ans = (ans * 10) + i;
         sum += ans;
     }
 
