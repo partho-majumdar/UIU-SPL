@@ -1,0 +1,1 @@
+From q17 to q22 All are 2D array related problem so visit "2D Array Related Problem" repository 🙂
