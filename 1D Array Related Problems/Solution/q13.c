@@ -2,7 +2,7 @@
 
 void main()
 {
-    int arr[100], arr2[100];
+    int arr[100];
 
     int n;
     printf("Enter how many number you want to take as input: ");
