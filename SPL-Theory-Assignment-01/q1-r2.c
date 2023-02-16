@@ -2,10 +2,7 @@
 
 void main()
 {
-    int n;
-
-    printf("Enter row number: ");
-    scanf("%d", &n);
+    int n = 5;
 
     for (int i = 1; i <= n; i++)
     {
