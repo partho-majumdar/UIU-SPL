@@ -2,10 +2,7 @@
 
 void main()
 {
-    int n;
-
-    printf("Enter row number: ");
-    scanf("%d", &n);
+    int n = 5;
 
     for (int i = n; i >= 1; i--)
     {
@@ -30,3 +27,13 @@ void main()
         printf("\n");
     }
 }
+
+/*
+
+5 4 3 2 1
+  4 3 2 1
+    3 2 1
+      2 1
+        0
+
+*/
