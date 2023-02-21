@@ -16,7 +16,7 @@ void main()
         {
             if (i < y)
             {
-                printf("%d ", i * i);
+                printf("%d, ", i * i);
             }
 
             else if (i == y)
@@ -32,7 +32,7 @@ void main()
         {
             if (i > y)
             {
-                printf("%d ", i * i);
+                printf("%d, ", i * i);
             }
 
             else if (i == y)
