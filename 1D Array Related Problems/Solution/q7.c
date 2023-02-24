@@ -19,7 +19,9 @@ void main()
 
     for (int j = 0; j < n; j++)
     {
-        if (arr[j] == 'A' || arr[j] == 'E' || arr[j] == 'I' || arr[j] == 'O' || arr[j] == 'U' || arr[j] == 'a' || arr[j] == 'e' || arr[j] == 'i' || arr[j] == 'o' || arr[j] == 'u')
+        char upper_case = toupper(arr[j]);
+
+        if (upper_case == 'A' || upper_case == 'E' || upper_case == 'I' || upper_case == 'O' || upper_case == 'U')
         {
             count++;
         }
