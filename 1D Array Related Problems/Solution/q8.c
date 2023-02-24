@@ -3,7 +3,7 @@
 void main()
 {
     int n, search_num;
-    int arr[100], found[100];
+    int arr[100];
 
     printf("Enter how many number you want to take as input: ");
     scanf("%d", &n);
@@ -22,7 +22,7 @@ void main()
 
     // print
     printf("Found at index position: ");
-    
+
     for (int j = 0; j < n; j++)
     {
         if (arr[j] == search_num)
