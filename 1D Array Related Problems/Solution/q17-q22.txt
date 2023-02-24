@@ -1,1 +1,1 @@
-From q17 to q22 all are 2D array related problem so visit "2D Array Related Problem" repository 🙂
+From q17 to q22 all are 2D array related problem so visit "2D Array Related Problem" folder 🙂
