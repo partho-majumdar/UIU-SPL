@@ -18,30 +18,23 @@ void main()
     }
 
     // print original Array
-    int count1 = 0;
-
-    if (count1 == 0)
-    {
-        printf("\nArray A: ");
-        count1++;
-    }
+    printf("\nArray A: ");
 
     for (int i = 0; i <= n - 1; i++)
     {
-        arrB[i] = arrA[i];
         printf("%d ", arrA[i]);
     }
 
-    // print reverse copy array
-    int count2 = 0;
-
-    if (count2 == 0)
+    // copy element in reverse order
+    for (int j = 0; j <= n - 1; j++)
     {
-        printf("\nArray B: ");
-        count2++;
+        arrB[j] = arrA[n - 1 - j];
     }
 
-    for (int i = n - 1; i >= 0; i--)
+    // print reverse array
+    printf("\nArray B: ");
+
+    for (int i = 0; i <= n - 1; i++)
     {
         printf("%d ", arrB[i]);
     }
