@@ -46,33 +46,21 @@ void main()
         arrB[i] = temp[i];
     }
 
-    // print array A
-    int count1 = 0;
+    printf("\n");
 
-    if (count1 == 0)
-    {
-        printf("Array A: ");
-        count1++;
-    }
+    printf("Array A: ");
 
     for (int i = 0; i <= n2 - 1; i++)
     {
-        printf("%d  ", arrA[i]);
+        printf("%d ", arrA[i]);
     }
 
     printf("\n");
 
-    // print array B
-    int count2 = 0;
-
-    if (count2 == 0)
-    {
-        printf("Array B: ");
-        count2++;
-    }
+    printf("Array B: ");
 
     for (int i = 0; i <= n1 - 1; i++)
     {
-        printf("%d  ", arrB[i]);
+        printf("%d ", arrB[i]);
     }
 }
