@@ -15,8 +15,16 @@ void main()
         scanf("%d", &arr[i]);
     }
 
+    // reverse array
+    for (int k = 0; k < n / 2; k++)
+    {
+        int temp = arr[k];
+        arr[k] = arr[n - 1 - k];
+        arr[n - 1 - k] = temp;
+    }
+
     // print
-    for (int j = n - 1; j >= 0; j--)
+    for (int j = 0; j < n; j++)
     {
         printf("%d ", arr[j]);
     }
