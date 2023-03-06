@@ -4,42 +4,24 @@ void main()
 {
     int n;
 
-    printf("Enter row number: ");
+    printf("Enter how many row(odd) you want to print: ");
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++)
     {
-        if (i == (n + 1) / 2)
+        for (int j = 1; j <= n; j++)
         {
-            for (int k = 1; k <= n; k++)
+            if (i == n / 2 + 1 || j == 1 || j == n)
             {
                 printf("H");
             }
 
-            printf("\n");
-        }
-
-        else
-        {
-            // value
-            for (int k = 1; k <= 1; k++)
-            {
-                printf("H");
-            }
-
-            // space
-            for (int j = 1; j <= n - 2; j++)
+            else
             {
                 printf(" ");
             }
-
-            // value
-            for (int k = 1; k <= 1; k++)
-            {
-                printf("H");
-            }
-
-            printf("\n");
         }
+
+        printf("\n");
     }
 }
