@@ -23,7 +23,7 @@ void main()
     else
     {
         int init_val = n * n;
-        
+
         printf("%d^2 + ", n);
 
         for (i = n - 1, j = n - 2; i >= 2, j >= 1; i -= 2, j -= 2)
