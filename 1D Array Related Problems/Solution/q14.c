@@ -31,13 +31,21 @@ void main()
     // set intersection
     for (int i = 0; i <= n - 1; i++)
     {
+        int flag = 0;
+
         for (int j = 0; j <= m - 1; j++)
         {
             if (arr1[i] == arr2[j])
             {
-                ans[k] = arr1[i];
-                k++;
+                flag = 1;
+                break;
             }
+        }
+
+        if (flag == 1)
+        {
+            ans[k] = arr1[i];
+            k++;
         }
     }
 
