@@ -40,3 +40,42 @@ void main()
         printf("%d ", arr[i]);
     }
 }
+
+/*
+
+#include <stdio.h>
+
+void main()
+{
+    int arr[5] = {1, 1, 1, 1, 2};
+    int ans[100];
+
+    int n = 5, k = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        int flag = 1;
+
+        for (int j = 0; j < k; j++)
+        {
+            if (arr[i] == ans[j])
+            {
+                flag = 0;
+                break;
+            }
+        }
+
+        if (flag == 1)
+        {
+            ans[k] = arr[i];
+            k++;
+        }
+    }
+
+    for (int i = 0; i < k; i++)
+    {
+        printf("%d ", ans[i]);
+    }
+}
+
+*/
