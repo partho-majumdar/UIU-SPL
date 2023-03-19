@@ -2,12 +2,6 @@
 
 void main()
 {
-    // int arr1[3] = {1, 2, 3};
-    // int arr2[3] = {2, 3, 4};
-
-    // int m = 3;
-    // int n = 3;
-
     int arr1[100], arr2[100];
     int m, n;
 
