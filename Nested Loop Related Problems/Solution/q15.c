@@ -9,34 +9,19 @@ void main()
 
     for (int i = 1; i <= n; i++)
     {
-        if (i == 1 || i == n)
+        for (int j = 1; j <= n; j++)
         {
-            // value
-            for (int j = 1; j <= n; j++)
+            if (i == 1 || i == n || i + j == n + 1)
             {
                 printf("Z");
             }
 
-            printf("\n");
-        }
-
-        else
-        {
-            int inner_space = i == n - 1 ? 1 : n - i + 1;
-
-            // space
-            for (int j = 1; j <= inner_space; j++)
+            else
             {
                 printf(" ");
             }
-
-            // value
-            for (int k = 1; k <= 1; k++)
-            {
-                printf("Z");
-            }
-
-            printf("\n");
         }
+
+        printf("\n");
     }
 }
