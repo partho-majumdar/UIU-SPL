@@ -30,6 +30,7 @@ void main()
     for (int i = 0; i < n; i++)
     {
         int found = 0;
+
         for (int j = 0; j < k; j++)
         {
             if (arr1[i] == ans[j])
@@ -39,7 +40,7 @@ void main()
             }
         }
 
-        if (!found)
+        if (found == 0)
         {
             ans[k] = arr1[i];
             k++;
@@ -58,16 +59,16 @@ void main()
             }
         }
 
-        for (int i = 0; i < k; i++)
-        {
-            if (arr2[j] == ans[i])
-            {
-                found = 1;
-                break;
-            }
-        }
+        // for (int i = 0; i < k; i++)
+        // {
+        //     if (arr2[j] == ans[i])
+        //     {
+        //         found = 1;
+        //         break;
+        //     }
+        // }
 
-        if (!found)
+        if (found == 0)
         {
             ans[k] = arr2[j];
             k++;
