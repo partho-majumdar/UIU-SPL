@@ -2,22 +2,21 @@
 
 void main()
 {
-    int arr1[100], arr2[200];
-    int m, n;
+    int arr1[100], arr2[100], n1, n2;
 
     printf("Enter total number of element in arr1: ");
-    scanf("%d", &m);
+    scanf("%d", &n1);
 
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i < n1; i++)
     {
         printf("arr[%d]: ", i);
         scanf("%d", &arr1[i]);
     }
 
     printf("\nEnter total number of element in arr2: ");
-    scanf("%d", &n);
+    scanf("%d", &n2);
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n2; i++)
     {
         printf("arr[%d]: ", i);
         scanf("%d", &arr2[i]);
@@ -27,30 +26,17 @@ void main()
 
     int k = 0;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n1; i++)
     {
-        int found = 0;
-
-        for (int j = 0; j < k; j++)
-        {
-            if (arr1[i] == ans[j])
-            {
-                found = 1;
-                break;
-            }
-        }
-
-        if (found == 0)
-        {
-            ans[k] = arr1[i];
-            k++;
-        }
+        ans[k] = arr1[i];
+        k++;
     }
 
-    for (int j = 0; j < m; j++)
+    for (int j = 0; j < n2; j++)
     {
         int found = 0;
-        for (int i = 0; i < n; i++)
+
+        for (int i = 0; i < n1; i++)
         {
             if (arr2[j] == arr1[i])
             {
@@ -58,15 +44,6 @@ void main()
                 break;
             }
         }
-
-        // for (int i = 0; i < k; i++)
-        // {
-        //     if (arr2[j] == ans[i])
-        //     {
-        //         found = 1;
-        //         break;
-        //     }
-        // }
 
         if (found == 0)
         {
