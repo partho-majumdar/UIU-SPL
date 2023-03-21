@@ -56,7 +56,7 @@ void main()
     int sum = 0;
     for (int i = 0; i <= r1 - 1; i++)
     {
-        for (int j = 0; j <= c1 - 1; j++)
+        for (int j = 0; j <= c2 - 1; j++)
         {
             for (int k = 0; k <= c1 - 1; k++)
             {
@@ -79,3 +79,16 @@ void main()
         printf("\n");
     }
 }
+
+/*
+
+2 * 3
+3 * 2
+
+2 * 2
+3 * 2
+
+1st col == 2nd row
+ans --> 1st row * 2nd col 
+
+*/
