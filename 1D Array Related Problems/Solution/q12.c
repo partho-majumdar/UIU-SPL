@@ -53,7 +53,7 @@ void main()
 
 Bubble sort --> sorting algorithm that sort the array step by step
 
-Swapped --> array is already sorted so first pass er por break marbe "time complexity" valo hobe 
+Swapped --> array is already sorted so first pass er por break marbe "time complexity" valo hobe
 
 first pass a e jodi kono value swap na hoy it means array is already sorted no need to check 2nd 3rd.... pass
 
