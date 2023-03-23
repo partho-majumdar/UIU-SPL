@@ -8,9 +8,14 @@ void main()
     printf("Enter string: ");
     gets(str);
 
-    for (int i = 0; str[i] != '\0'; i++)
+    int length = strlen(str);
+
+    for (int i = 0; i < length / 2; i++)
     {
-        int convert = toupper(str[i]);
-        printf("%c", convert);
+        int temp = str[i];
+        str[i] = str[length - i - 1];
+        str[length - i - 1] = temp;
     }
+
+    puts(str);
 }
