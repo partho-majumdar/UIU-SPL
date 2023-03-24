@@ -34,7 +34,7 @@ void main()
     printf("Enter string: ");
     gets(str);
 
-    int i, count = 0;
+    int i = 0, count = 0;
 
     // remove first space
     while (str[i] == ' ')
