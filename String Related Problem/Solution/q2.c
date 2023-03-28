@@ -10,16 +10,24 @@ void main()
     printf("Enter second string: ");
     gets(str2);
 
-    for (int i = 0; str1[i] != '\0'; i++)
+    int i, j;
+
+    // Find the end of str1
+    for (i = 0; str1[i] != '\0'; i++);
+
+    // Copy str2 to the end of str1
+    for (j = 0; str2[j] != '\0'; j++)
     {
-        printf("%c", str1[i]);
+        str1[i] = str2[j];
+        i++;
     }
 
-    for (int j = 0; str2[j] != '\0'; j++)
-    {
-        printf("%c", str2[j]);
-    }
+    // Add the null terminator to the end of the concatenated string
+    str1[i] = '\0';
+
+    printf("Concatenated string: %s\n", str1);
 }
+
 
 // ------------ R - 02 -------------
 
@@ -37,23 +45,16 @@ void main()
     printf("Enter second string: ");
     gets(str2);
 
-    int i, j;
-
-
-    // Find the end of str1
-    for (i = 0; str1[i] != '\0'; i++);
-
-    // Copy str2 to the end of str1
-    for (j = 0; str2[j] != '\0'; j++)
+    for (int i = 0; str1[i] != '\0'; i++)
     {
-        str1[i] = str2[j];
-        i++;
+        printf("%c", str1[i]);
     }
 
-    // Add the null terminator to the end of the concatenated string
-    str1[i] = '\0';
-
-    printf("Concatenated string: %s\n", str1);
+    for (int j = 0; str2[j] != '\0'; j++)
+    {
+        printf("%c", str2[j]);
+    }
 }
+
 
 */
