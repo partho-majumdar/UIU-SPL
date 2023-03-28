@@ -7,33 +7,6 @@ void main()
     printf("Enter string: ");
     gets(str);
 
-    int space = 0;
-
-    for (int i = 0; str[i] != '\0'; i++)
-    {
-        if (str[i] == ' ')
-        {
-            space++;
-        }
-    }
-
-    int words = space + 1;
-
-    printf("%d", words);
-}
-
-// ------------- R - 02 ------------
-/*
-
-#include <stdio.h>
-#include <string.h>
-
-void main()
-{
-    char str[100];
-    printf("Enter string: ");
-    gets(str);
-
     int i = 0, count = 0;
 
     // remove first space
@@ -53,5 +26,3 @@ void main()
 
     printf("%d", count + 1);
 }
-
-*/
