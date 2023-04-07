@@ -34,7 +34,8 @@ int *multiplyArray(int *arr, int n)
 
     for (int i = 0; i < n; i++)
     {
-        *(newArray + i) = *(arr + i) * 2;
+        newArray[i] = *(arr + i) * 2;
+        // *(newArray + i) = *(arr + i) * 2;
     }
 
     return newArray;
