@@ -31,7 +31,7 @@ void InputMatrix(int (*mat)[5], int row, int col)
         for (int j = 0; j < col; j++)
         {
             printf("Mat[%d][%d]: ", i, j);
-            scanf("%5d", (*(mat + i) + j));
+            scanf("%d", (*(mat + i) + j));
         }
     }
 }
