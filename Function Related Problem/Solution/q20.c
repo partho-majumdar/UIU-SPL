@@ -1,36 +1,59 @@
 #include <stdio.h>
 
-int is_prime(int n);
+void GetNthPrime(int);
+int is_prime(int);
 
-int nth_prime(int n) {
-    int count = 0;
-    int i = 2;
-    while (count < n) {
-        if (is_prime(i)) {
+void main()
+{
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    GetNthPrime(n);
+}
+
+void GetNthPrime(int n)
+{
+    int count = 0, num = 2;
+
+    while (count < n)
+    {
+        if (is_prime(num))
+        {
             count++;
         }
-        i++;
+        num++;
     }
-    return i-1;
+    printf("The %dth prime number is %d\n", n, num - 1);
 }
 
-int is_prime(int n) {
-    if (n <= 1) {
-        return 0; // not prime
+int is_prime(int n)
+{
+    if (n == 0 || n == 1)
+    {
+        return 0;
     }
-    for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-            return 0; // not prime
+
+    else
+    {
+        int flag = 1;
+        for (int i = 2; i < n; i++)
+        {
+            if (n % i == 0)
+            {
+                flag = 0;
+                break;
+            }
+        }
+
+        if (flag == 1)
+        {
+            return 1;
+        }
+
+        else
+        {
+            return 0;
         }
     }
-    return 1; // prime
-}
-
-int main() {
-    int n;
-    printf("Enter an integer: ");
-    scanf("%d", &n);
-    int nthPrime = nth_prime(n);
-    printf("The %dth prime number is: %d\n", n, nthPrime);
-    return 0;
 }
