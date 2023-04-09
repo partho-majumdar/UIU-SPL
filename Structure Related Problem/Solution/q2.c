@@ -13,6 +13,6 @@ void main()
     Student s1;
 
     strcpy(s1.name, "Jinku");
-    strcpy(s1.name, "011222266");
+    strcpy(s1.id, "011222266");
     s1.cgpa = 3.8;
 }
