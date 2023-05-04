@@ -1,0 +1,6 @@
+1. Write a structure to store the roll no., name, age (between 10 to 15) and marks
+of students. Store the information of 5 students.
+(a) - Write a function to print the names of all the students having the same marks.
+(b) - Write another function to print the names of all the students having even roll no.
+(c) - Write another function to display the roll no. of the students whose age is more
+than 15 or less than 10 (i.e. roll no. entered by the user).
