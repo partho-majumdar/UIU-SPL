@@ -68,13 +68,15 @@ void search_by_model()
     printf("Enter car model: ");
     gets(carModel);
 
+    printf("\nHere is search result: \n");
+
     for (int i = 0; i < count; i++)
     {
         if (strcmpi(cars[i].model, carModel) == 0)
         {
-            printf("%s ", cars[i].make);
-            printf("%s ", cars[i].model);
-            printf("%d ", cars[i].year);
+            printf("%d. %s ~ ", i + 1, cars[i].make);
+            printf("%s ~ ", cars[i].model);
+            printf("%d ~ ", cars[i].year);
             printf("%.2f\n", cars[i].price);
         }
     }
