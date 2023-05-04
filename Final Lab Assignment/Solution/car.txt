@@ -1,0 +1,6 @@
+Honda,Civic,2021,25000.00
+Honda,Civic,2025,60000.00
+Toyota,Camry,2017,28000.00
+Toyota,Camry,2020,58000.00
+Chevrolet,Malibu,2019,22000.00
+Ford,Mustang,2018,35000.00
