@@ -44,5 +44,5 @@ void main()
         consonant = 0;
     }
 
-    printf("%s", longWord);
+    printf("The longest word is: %s", longWord);
 }
