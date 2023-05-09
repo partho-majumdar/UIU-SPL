@@ -8,6 +8,7 @@ void main()
     char word[25];
     printf("Enter string: ");
     gets(word);
+    strupr(word);
 
     char *p = word;
     int len = strlen(word);
@@ -44,6 +45,7 @@ int isPalindrome(char *word, int i)
         {
             return 1;
         }
+
         isPalindrome(word, i + 1);
     }
 
