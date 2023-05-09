@@ -5,8 +5,8 @@
 void main()
 {
     char arrWord[][50] = {"aeiouplm", "aeiplm", "aeiouplmnuvw", "aeiplmnqrs"};
-
     int size = sizeof(arrWord) / sizeof(arrWord[0]);
+
     int i = 0;
     int vowel = 0;
     int consonant = 0;
@@ -22,6 +22,7 @@ void main()
         for (int j = 0; j < indLen; j++)
         {
             char ch = toupper(individualWord[j]);
+            
             if (ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
             {
                 vowel++;
