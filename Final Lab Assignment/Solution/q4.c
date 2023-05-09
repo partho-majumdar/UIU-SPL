@@ -26,11 +26,9 @@ void main()
     case '1':
         search_by_model();
         break;
-
     case '2':
         sort_by_year();
         break;
-
     default:
         break;
     }
