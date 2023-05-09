@@ -34,15 +34,18 @@ void main()
         count++;
     }
 
-    printf("\nThese all are invalid number: \n");
-
     for (int i = 0; i < count; i++)
     {
         int length = strlen(phone[i].number);
 
-        if (length != 11)
+        if (length == 11)
         {
-            printf("%s\n", phone[i].number);
+            printf("Valid Number: %s\n", phone[i].number);
+        }
+
+        else if (length != 11)
+        {
+            printf("Invalid Number ~ %s\n", phone[i].number);
 
             strncpy(phone[i].sim_code, phone[i].number, 3);
             phone[i].sim_code[3] = '\0';
