@@ -34,6 +34,6 @@ int findMin(int *arr, int n)
             min = *(arr + i);
         }
     }
-    
+
     return min;
 }
