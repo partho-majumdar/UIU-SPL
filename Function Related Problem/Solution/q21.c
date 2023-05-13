@@ -27,7 +27,8 @@ int calcMean(int *arr, int num_of_element)
     int sum = 0;
     for (int i = 0; i < num_of_element; i++)
     {
-        sum += *(arr + i);
+        sum += arr[i];
+        // sum += *(arr + i);
     }
 
     int mean = sum / num_of_element;
@@ -43,7 +44,8 @@ float calc_std_deviation(int *arr, int num_of_element)
 
     for (int i = 0; i < num_of_element; i++)
     {
-        sum_of_x_mean += pow((*(arr + i) - mean), 2);
+        sum_of_x_mean += pow((arr[i] - mean), 2);
+        // sum_of_x_mean += pow((*(arr + i) - mean), 2);
     }
 
     float calc_deviation = sqrt(sum_of_x_mean / num_of_element);
@@ -52,6 +54,13 @@ float calc_std_deviation(int *arr, int num_of_element)
 }
 
 /*
+arr[] = {4, 5, 5, 4, 4, 2, 2, 6}
+
+here
+    x = each element of array
+    M = avg of all element
+    N = number of element in array
+
 ------------ without pointer ----------
 
 #include <stdio.h>
