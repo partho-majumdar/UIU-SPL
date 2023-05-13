@@ -68,3 +68,74 @@ void ScalarMatrix(int **mat, int row, int col, int scalar)
         }
     }
 }
+
+/*
+------------- without pointer --------
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void InputMatrix(int mat[][100], int, int);
+void ShowMatrix(int mat[][100], int, int);
+void ScalarMatrix(int mat[][100], int, int, int);
+
+void main()
+{
+    int mat[100][100];
+    int r, c;
+    printf("Enter row: ");
+    scanf("%d", &r);
+
+    printf("Enter col: ");
+    scanf("%d", &c);
+
+    int scalar;
+    printf("Enter scaler value: ");
+    scanf("%d", &scalar);
+
+    InputMatrix(mat, r, c);
+
+    printf("Original: \n");
+    ShowMatrix(mat, r, c);
+
+    printf("\nMultiplied by %d: \n", scalar);
+    ScalarMatrix(mat, r, c, scalar);
+    ShowMatrix(mat, r, c);
+}
+
+void InputMatrix(int mat[][100], int row, int col)
+{
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            printf("Mat[%d][%d]: ", i, j);
+            scanf("%d", &mat[i][j]);
+        }
+    }
+}
+
+void ShowMatrix(int mat[][100], int row, int col)
+{
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            printf("%5d ", mat[i][j]);
+        }
+        printf("\n");
+    }
+}
+
+void ScalarMatrix(int mat[][100], int row, int col, int scalar)
+{
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            mat[i][j] *= scalar;
+        }
+    }
+}
+
+*/
