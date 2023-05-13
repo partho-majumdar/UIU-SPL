@@ -45,6 +45,7 @@ int find_substr(char *str, char *word)
             }
         }
     }
+
     return -1;
 }
 
@@ -55,5 +56,6 @@ int str_length(char *string)
     {
         i++;
     }
+
     return i;
 }
