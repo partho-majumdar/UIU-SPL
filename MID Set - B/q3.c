@@ -8,25 +8,25 @@ int main()
     scanf("%d %d %d", &S, &Num, &D);
 
     /// source(s) -> Decimal
-    int deci = 0, i = 0, j;
+    int deci = 0, power = 0;
     while (Num)
     {
-        deci += Num % 10 * pow(S, i);
-        i++;
+        deci += Num % 10 * pow(S, power);
+        power++;
         Num /= 10;
     }
 
     /// Decimal -> destination(D)
     int des[100];
-    i = 0;
+    int i = 0;
     while (deci)
     {
         des[i] = deci % D;
         deci = deci / D;
         i++;
     }
-    
-    for (j = i - 1; j >= 0; j--)
+
+    for (int j = i - 1; j >= 0; j--)
     {
         printf("%d", des[j]);
     }
