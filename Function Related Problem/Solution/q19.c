@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int GeneratePrime(int);
+void GeneratePrime(int);
 int isPrime(int);
 
 void main()
@@ -12,7 +12,7 @@ void main()
     GeneratePrime(n);
 }
 
-int GeneratePrime(int n)
+void GeneratePrime(int n)
 {
     for (int i = 2; i < n; i++)
     {
