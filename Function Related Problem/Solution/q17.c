@@ -42,7 +42,7 @@ int *sortArray(int *arr, int n)
         }
     }
 
-    int *newArray = (int *)malloc(sizeof(int));
+    int *newArray = (int *)malloc(n * sizeof(int));
 
     for (int i = 0; i < n; i++)
     {
