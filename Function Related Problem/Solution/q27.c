@@ -18,7 +18,7 @@ void main()
 
 int *Convert_Number(int *num, int *base)
 {
-    int *arr = (int *)malloc(10 * sizeof(int));
+    int *arr = (int *)malloc(100 * sizeof(int));
     int i = 0;
 
     while (*num != 0)
@@ -48,7 +48,7 @@ int *Get_Number_And_Base()
 
     while (B < 2 || B > 16)
     {
-        printf("Wrong base number. Enter number between 2 and 16\n");
+        printf("Wrong base number! Enter number between 2 and 16\n");
         printf("Enter base number: ");
         scanf("%d", &B);
     }
@@ -58,18 +58,3 @@ int *Get_Number_And_Base()
 
     return arr;
 }
-
-// void Show_Converted_Number(int *num, int *base)
-// {
-//     int *arr = (int *)malloc(3 * sizeof(int));
-
-//     arr = Convert_Number(num, base);
-
-//     // printf("%d %d %d", arr[0], arr[1], arr[2], arr[3]);
-//     // Convert_Number(num, base);
-
-//     for (int j = 2; j >= 0; j--)
-//     {
-//         printf("%d", arr[j]);
-//     }
-// }
