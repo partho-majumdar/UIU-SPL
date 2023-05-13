@@ -26,6 +26,7 @@ int find_substr(char *str, char *word)
 {
     int length1 = strlen(str);
     int length2 = strlen(word);
+
     int j = 0;
 
     for (int i = 0; i < length1; i++)
@@ -46,5 +47,6 @@ int find_substr(char *str, char *word)
             }
         }
     }
+
     return -1;
 }
